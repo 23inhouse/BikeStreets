@@ -137,11 +137,8 @@
 		B5125633234621CB00D86BE5 /* Map */ = {
 			isa = PBXGroup;
 			children = (
-				B5125634234621CB00D86BE5 /* AppDelegate.swift */,
 				B5125636234621CB00D86BE5 /* ViewController.swift */,
-				B5125638234621CB00D86BE5 /* Main.storyboard */,
-				B512563B234621CC00D86BE5 /* Assets.xcassets */,
-				B512563D234621CC00D86BE5 /* LaunchScreen.storyboard */,
+				B51256632346228F00D86BE5 /* Supporting Files */,
 				B5125640234621CC00D86BE5 /* Info.plist */,
 			);
 			path = Map;
@@ -163,6 +160,17 @@
 				B5125656234621CC00D86BE5 /* Info.plist */,
 			);
 			path = MapUITests;
+			sourceTree = "<group>";
+		};
+		B51256632346228F00D86BE5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B5125634234621CB00D86BE5 /* AppDelegate.swift */,
+				B512563B234621CC00D86BE5 /* Assets.xcassets */,
+				B512563D234621CC00D86BE5 /* LaunchScreen.storyboard */,
+				B5125638234621CB00D86BE5 /* Main.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
