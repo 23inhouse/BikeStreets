@@ -16,6 +16,7 @@
 		B512563F234621CC00D86BE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B512563D234621CC00D86BE5 /* LaunchScreen.storyboard */; };
 		B512564A234621CC00D86BE5 /* MapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5125649234621CC00D86BE5 /* MapTests.swift */; };
 		B5125655234621CC00D86BE5 /* MapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5125654234621CC00D86BE5 /* MapUITests.swift */; };
+		B5534518234E36E5009AF340 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5534517234E36E5009AF340 /* Coordinator.swift */; };
 		B553451E234E37C6009AF340 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = B553451D234E37C6009AF340 /* UIView+Constraints.swift */; };
 		B5534520234E3859009AF340 /* UIViewController+Subcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = B553451F234E3859009AF340 /* UIViewController+Subcontroller.swift */; };
 		FD417FB4210236F9BC6D5C85 /* Pods_Map.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D78741C402D91D767DB520 /* Pods_Map.framework */; };
@@ -56,6 +57,7 @@
 		B5125650234621CC00D86BE5 /* MapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5125654234621CC00D86BE5 /* MapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapUITests.swift; sourceTree = "<group>"; };
 		B5125656234621CC00D86BE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5534517234E36E5009AF340 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		B553451D234E37C6009AF340 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
 		B553451F234E3859009AF340 /* UIViewController+Subcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Subcontroller.swift"; sourceTree = "<group>"; };
 		C24314C5683297D757D9C772 /* Pods-MapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapTests.debug.xcconfig"; path = "Target Support Files/Pods-MapTests/Pods-MapTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 			children = (
 				B5125636234621CB00D86BE5 /* ViewController.swift */,
 				B553451A234E3773009AF340 /* Extensions */,
+				B5534519234E3712009AF340 /* Protocols */,
 				B51256632346228F00D86BE5 /* Supporting Files */,
 				B5125640234621CC00D86BE5 /* Info.plist */,
 			);
@@ -176,6 +179,14 @@
 				B5125638234621CB00D86BE5 /* Main.storyboard */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B5534519234E3712009AF340 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B5534517234E36E5009AF340 /* Coordinator.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		B553451A234E3773009AF340 /* Extensions */ = {
@@ -410,6 +421,7 @@
 			files = (
 				B5125637234621CB00D86BE5 /* ViewController.swift in Sources */,
 				B553451E234E37C6009AF340 /* UIView+Constraints.swift in Sources */,
+				B5534518234E36E5009AF340 /* Coordinator.swift in Sources */,
 				B5534520234E3859009AF340 /* UIViewController+Subcontroller.swift in Sources */,
 				B5125635234621CB00D86BE5 /* AppDelegate.swift in Sources */,
 			);
