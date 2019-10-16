@@ -24,8 +24,8 @@ class MapViewController: UIViewController {
     let mapView = MGLMapView(frame: view.bounds)
     mapView.delegate = self
     mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-    mapView.styleURL = MGLStyle.lightStyleURL
-    mapView.zoomLevel = 11
+    mapView.styleURL = URL(string: "mapbox://styles/23inhouse/ck2a8ez6l03801crrht1wx7cz")
+    mapView.zoomLevel = 12
     mapView.allowsRotating = false
 
     return mapView
