@@ -6,6 +6,7 @@ target 'Map' do
   use_frameworks!
 
   pod 'SwiftLint'
+  pod 'Mapbox-iOS-SDK', '~> 5.4'
 
   target 'MapTests' do
     inherit! :search_paths
