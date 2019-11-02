@@ -32,6 +32,23 @@
 		B5F7972F236DF6960019CF0B /* OSMDataBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F7972D236DF6960019CF0B /* OSMDataBridge.swift */; };
 		B5F79730236DF6960019CF0B /* OSMElementToWayBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F7972E236DF6960019CF0B /* OSMElementToWayBridge.swift */; };
 		B5F79733236DF6AD0019CF0B /* OSMElementToWayBridgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F79732236DF6AD0019CF0B /* OSMElementToWayBridgeTests.swift */; };
+		B5F7973B236DF7410019CF0B /* StreetFilterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F79738236DF7410019CF0B /* StreetFilterable.swift */; };
+		B5F7973C236DF7410019CF0B /* StreetQualitatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F79739236DF7410019CF0B /* StreetQualitatable.swift */; };
+		B5F79759236DF7EC0019CF0B /* HighwayTypeProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F79758236DF7EC0019CF0B /* HighwayTypeProperty.swift */; };
+		B5F79769236DF7F80019CF0B /* CycleWayQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F7975B236DF7F80019CF0B /* CycleWayQuality.swift */; };
+		B5F7976A236DF7F80019CF0B /* CobblestoneQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F7975C236DF7F80019CF0B /* CobblestoneQuality.swift */; };
+		B5F7976B236DF7F80019CF0B /* CycleStreetQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F7975D236DF7F80019CF0B /* CycleStreetQuality.swift */; };
+		B5F7976C236DF7F80019CF0B /* CycleWaySmallQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F7975E236DF7F80019CF0B /* CycleWaySmallQuality.swift */; };
+		B5F7976D236DF7F80019CF0B /* CycleLaneQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F7975F236DF7F80019CF0B /* CycleLaneQuality.swift */; };
+		B5F7976E236DF7F80019CF0B /* StreetQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F79760236DF7F80019CF0B /* StreetQuality.swift */; };
+		B5F7976F236DF7F80019CF0B /* CycleWayRoughQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F79761236DF7F80019CF0B /* CycleWayRoughQuality.swift */; };
+		B5F79770236DF7F80019CF0B /* CycleUnknownQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F79762236DF7F80019CF0B /* CycleUnknownQuality.swift */; };
+		B5F79771236DF7F80019CF0B /* StreetLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F79763236DF7F80019CF0B /* StreetLayer.swift */; };
+		B5F79772236DF7F80019CF0B /* CycleTrackQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F79764236DF7F80019CF0B /* CycleTrackQuality.swift */; };
+		B5F79773236DF7F80019CF0B /* CycleSharedFastQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F79765236DF7F80019CF0B /* CycleSharedFastQuality.swift */; };
+		B5F79774236DF7F80019CF0B /* CyclePathQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F79766236DF7F80019CF0B /* CyclePathQuality.swift */; };
+		B5F79775236DF7F80019CF0B /* CycleSharedQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F79767236DF7F80019CF0B /* CycleSharedQuality.swift */; };
+		B5F79776236DF7F80019CF0B /* CycleWayUnknownQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F79768236DF7F80019CF0B /* CycleWayUnknownQuality.swift */; };
 		FD417FB4210236F9BC6D5C85 /* Pods_Map.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D78741C402D91D767DB520 /* Pods_Map.framework */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +103,23 @@
 		B5F7972D236DF6960019CF0B /* OSMDataBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSMDataBridge.swift; sourceTree = "<group>"; };
 		B5F7972E236DF6960019CF0B /* OSMElementToWayBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSMElementToWayBridge.swift; sourceTree = "<group>"; };
 		B5F79732236DF6AD0019CF0B /* OSMElementToWayBridgeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSMElementToWayBridgeTests.swift; sourceTree = "<group>"; };
+		B5F79738236DF7410019CF0B /* StreetFilterable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreetFilterable.swift; sourceTree = "<group>"; };
+		B5F79739236DF7410019CF0B /* StreetQualitatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreetQualitatable.swift; sourceTree = "<group>"; };
+		B5F79758236DF7EC0019CF0B /* HighwayTypeProperty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighwayTypeProperty.swift; sourceTree = "<group>"; };
+		B5F7975B236DF7F80019CF0B /* CycleWayQuality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CycleWayQuality.swift; sourceTree = "<group>"; };
+		B5F7975C236DF7F80019CF0B /* CobblestoneQuality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CobblestoneQuality.swift; sourceTree = "<group>"; };
+		B5F7975D236DF7F80019CF0B /* CycleStreetQuality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CycleStreetQuality.swift; sourceTree = "<group>"; };
+		B5F7975E236DF7F80019CF0B /* CycleWaySmallQuality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CycleWaySmallQuality.swift; sourceTree = "<group>"; };
+		B5F7975F236DF7F80019CF0B /* CycleLaneQuality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CycleLaneQuality.swift; sourceTree = "<group>"; };
+		B5F79760236DF7F80019CF0B /* StreetQuality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreetQuality.swift; sourceTree = "<group>"; };
+		B5F79761236DF7F80019CF0B /* CycleWayRoughQuality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CycleWayRoughQuality.swift; sourceTree = "<group>"; };
+		B5F79762236DF7F80019CF0B /* CycleUnknownQuality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CycleUnknownQuality.swift; sourceTree = "<group>"; };
+		B5F79763236DF7F80019CF0B /* StreetLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreetLayer.swift; sourceTree = "<group>"; };
+		B5F79764236DF7F80019CF0B /* CycleTrackQuality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CycleTrackQuality.swift; sourceTree = "<group>"; };
+		B5F79765236DF7F80019CF0B /* CycleSharedFastQuality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CycleSharedFastQuality.swift; sourceTree = "<group>"; };
+		B5F79766236DF7F80019CF0B /* CyclePathQuality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CyclePathQuality.swift; sourceTree = "<group>"; };
+		B5F79767236DF7F80019CF0B /* CycleSharedQuality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CycleSharedQuality.swift; sourceTree = "<group>"; };
+		B5F79768236DF7F80019CF0B /* CycleWayUnknownQuality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CycleWayUnknownQuality.swift; sourceTree = "<group>"; };
 		C24314C5683297D757D9C772 /* Pods-MapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapTests.debug.xcconfig"; path = "Target Support Files/Pods-MapTests/Pods-MapTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E38FFDC982C138F072054E56 /* Pods-Map.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Map.debug.xcconfig"; path = "Target Support Files/Pods-Map/Pods-Map.debug.xcconfig"; sourceTree = "<group>"; };
 		EB1B1B0F1BBEBB07DD1BCC75 /* Pods-MapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapTests.release.xcconfig"; path = "Target Support Files/Pods-MapTests/Pods-MapTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -220,6 +254,8 @@
 			isa = PBXGroup;
 			children = (
 				B5534517234E36E5009AF340 /* Coordinator.swift */,
+				B5F79739236DF7410019CF0B /* StreetQualitatable.swift */,
+				B5F79738236DF7410019CF0B /* StreetFilterable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -256,6 +292,7 @@
 			isa = PBXGroup;
 			children = (
 				B5F7972C236DF6960019CF0B /* Bridge */,
+				B5F7975A236DF7F80019CF0B /* StreetQualities */,
 				B5F7971A236DF5BE0019CF0B /* WayTypes */,
 				B5F79728236DF6410019CF0B /* OSMRawData.swift */,
 				B5F79719236DF5BE0019CF0B /* OSMWay.swift */,
@@ -307,6 +344,28 @@
 				B5F79732236DF6AD0019CF0B /* OSMElementToWayBridgeTests.swift */,
 			);
 			path = Bridge;
+			sourceTree = "<group>";
+		};
+		B5F7975A236DF7F80019CF0B /* StreetQualities */ = {
+			isa = PBXGroup;
+			children = (
+				B5F7975C236DF7F80019CF0B /* CobblestoneQuality.swift */,
+				B5F7975F236DF7F80019CF0B /* CycleLaneQuality.swift */,
+				B5F79766236DF7F80019CF0B /* CyclePathQuality.swift */,
+				B5F79765236DF7F80019CF0B /* CycleSharedFastQuality.swift */,
+				B5F79767236DF7F80019CF0B /* CycleSharedQuality.swift */,
+				B5F7975D236DF7F80019CF0B /* CycleStreetQuality.swift */,
+				B5F79764236DF7F80019CF0B /* CycleTrackQuality.swift */,
+				B5F79762236DF7F80019CF0B /* CycleUnknownQuality.swift */,
+				B5F7975B236DF7F80019CF0B /* CycleWayQuality.swift */,
+				B5F79761236DF7F80019CF0B /* CycleWayRoughQuality.swift */,
+				B5F7975E236DF7F80019CF0B /* CycleWaySmallQuality.swift */,
+				B5F79768236DF7F80019CF0B /* CycleWayUnknownQuality.swift */,
+				B5F79758236DF7EC0019CF0B /* HighwayTypeProperty.swift */,
+				B5F79763236DF7F80019CF0B /* StreetLayer.swift */,
+				B5F79760236DF7F80019CF0B /* StreetQuality.swift */,
+			);
+			path = StreetQualities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -565,21 +624,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5F79775236DF7F80019CF0B /* CycleSharedQuality.swift in Sources */,
+				B5F79771236DF7F80019CF0B /* StreetLayer.swift in Sources */,
+				B5F79772236DF7F80019CF0B /* CycleTrackQuality.swift in Sources */,
 				B5F79716236DF3DE0019CF0B /* MapViewController+MGLMapViewDelegate.swift in Sources */,
+				B5F79769236DF7F80019CF0B /* CycleWayQuality.swift in Sources */,
+				B5F7976F236DF7F80019CF0B /* CycleWayRoughQuality.swift in Sources */,
 				B5534514234E36BB009AF340 /* AppCoordinator.swift in Sources */,
 				B553451E234E37C6009AF340 /* UIView+Constraints.swift in Sources */,
+				B5F79773236DF7F80019CF0B /* CycleSharedFastQuality.swift in Sources */,
+				B5F7973B236DF7410019CF0B /* StreetFilterable.swift in Sources */,
 				B5F79730236DF6960019CF0B /* OSMElementToWayBridge.swift in Sources */,
+				B5F7976C236DF7F80019CF0B /* CycleWaySmallQuality.swift in Sources */,
+				B5F7976D236DF7F80019CF0B /* CycleLaneQuality.swift in Sources */,
+				B5F7976A236DF7F80019CF0B /* CobblestoneQuality.swift in Sources */,
+				B5F79774236DF7F80019CF0B /* CyclePathQuality.swift in Sources */,
+				B5F79776236DF7F80019CF0B /* CycleWayUnknownQuality.swift in Sources */,
+				B5F7973C236DF7410019CF0B /* StreetQualitatable.swift in Sources */,
 				B5F79715236DF3DE0019CF0B /* MapViewController+CLLocationManagerDelegate.swift in Sources */,
 				B5F7972F236DF6960019CF0B /* OSMDataBridge.swift in Sources */,
 				B5F79722236DF5BE0019CF0B /* SurfaceType.swift in Sources */,
 				B5F79721236DF5BE0019CF0B /* CyclewayType.swift in Sources */,
+				B5F79759236DF7EC0019CF0B /* HighwayTypeProperty.swift in Sources */,
 				B5534518234E36E5009AF340 /* Coordinator.swift in Sources */,
+				B5F7976E236DF7F80019CF0B /* StreetQuality.swift in Sources */,
 				B5534516234E36D4009AF340 /* AppViewController.swift in Sources */,
 				B5F79729236DF6410019CF0B /* OSMRawData.swift in Sources */,
+				B5F7976B236DF7F80019CF0B /* CycleStreetQuality.swift in Sources */,
 				B5534520234E3859009AF340 /* UIViewController+Subcontroller.swift in Sources */,
 				B5F7971F236DF5BE0019CF0B /* OSMWay.swift in Sources */,
 				B5125635234621CB00D86BE5 /* AppDelegate.swift in Sources */,
 				B5F79720236DF5BE0019CF0B /* HighwayType.swift in Sources */,
+				B5F79770236DF7F80019CF0B /* CycleUnknownQuality.swift in Sources */,
 				B5F79723236DF5BE0019CF0B /* SmoothnessType.swift in Sources */,
 				B5F79711236DF3050019CF0B /* MapViewController.swift in Sources */,
 			);
