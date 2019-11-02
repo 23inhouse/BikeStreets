@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,8 @@
 		B553451E234E37C6009AF340 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = B553451D234E37C6009AF340 /* UIView+Constraints.swift */; };
 		B5534520234E3859009AF340 /* UIViewController+Subcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = B553451F234E3859009AF340 /* UIViewController+Subcontroller.swift */; };
 		B5F79711236DF3050019CF0B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F79710236DF3050019CF0B /* MapViewController.swift */; };
+		B5F79715236DF3DE0019CF0B /* MapViewController+CLLocationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F79712236DF3DE0019CF0B /* MapViewController+CLLocationManagerDelegate.swift */; };
+		B5F79716236DF3DE0019CF0B /* MapViewController+MGLMapViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F79713236DF3DE0019CF0B /* MapViewController+MGLMapViewDelegate.swift */; };
 		FD417FB4210236F9BC6D5C85 /* Pods_Map.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D78741C402D91D767DB520 /* Pods_Map.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +64,8 @@
 		B553451D234E37C6009AF340 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
 		B553451F234E3859009AF340 /* UIViewController+Subcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Subcontroller.swift"; sourceTree = "<group>"; };
 		B5F79710236DF3050019CF0B /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		B5F79712236DF3DE0019CF0B /* MapViewController+CLLocationManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MapViewController+CLLocationManagerDelegate.swift"; sourceTree = "<group>"; };
+		B5F79713236DF3DE0019CF0B /* MapViewController+MGLMapViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MapViewController+MGLMapViewDelegate.swift"; sourceTree = "<group>"; };
 		C24314C5683297D757D9C772 /* Pods-MapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapTests.debug.xcconfig"; path = "Target Support Files/Pods-MapTests/Pods-MapTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E38FFDC982C138F072054E56 /* Pods-Map.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Map.debug.xcconfig"; path = "Target Support Files/Pods-Map/Pods-Map.debug.xcconfig"; sourceTree = "<group>"; };
 		EB1B1B0F1BBEBB07DD1BCC75 /* Pods-MapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapTests.release.xcconfig"; path = "Target Support Files/Pods-MapTests/Pods-MapTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -221,6 +225,8 @@
 			isa = PBXGroup;
 			children = (
 				B5F79710236DF3050019CF0B /* MapViewController.swift */,
+				B5F79712236DF3DE0019CF0B /* MapViewController+CLLocationManagerDelegate.swift */,
+				B5F79713236DF3DE0019CF0B /* MapViewController+MGLMapViewDelegate.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -481,8 +487,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5F79716236DF3DE0019CF0B /* MapViewController+MGLMapViewDelegate.swift in Sources */,
 				B5534514234E36BB009AF340 /* AppCoordinator.swift in Sources */,
 				B553451E234E37C6009AF340 /* UIView+Constraints.swift in Sources */,
+				B5F79715236DF3DE0019CF0B /* MapViewController+CLLocationManagerDelegate.swift in Sources */,
 				B5534518234E36E5009AF340 /* Coordinator.swift in Sources */,
 				B5534516234E36D4009AF340 /* AppViewController.swift in Sources */,
 				B5534520234E3859009AF340 /* UIViewController+Subcontroller.swift in Sources */,
