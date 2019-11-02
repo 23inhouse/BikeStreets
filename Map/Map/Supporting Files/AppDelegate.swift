@@ -8,6 +8,11 @@
 
 import UIKit
 
+let klassNames = ["QuickSpec", "XCTestCase"]
+let IsRunningTests: Bool = klassNames.map({ klassName in
+  NSClassFromString(klassName) != nil
+}).contains(true)
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -15,6 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   var coordinator: AppCoordinator?
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    guard !IsRunningTests else { return true }
+
     gotoViewController()
     return true
   }
