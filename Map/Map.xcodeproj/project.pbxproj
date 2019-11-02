@@ -12,7 +12,6 @@
 		B5125635234621CB00D86BE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5125634234621CB00D86BE5 /* AppDelegate.swift */; };
 		B512563C234621CC00D86BE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B512563B234621CC00D86BE5 /* Assets.xcassets */; };
 		B512563F234621CC00D86BE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B512563D234621CC00D86BE5 /* LaunchScreen.storyboard */; };
-		B512564A234621CC00D86BE5 /* MapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5125649234621CC00D86BE5 /* MapTests.swift */; };
 		B5125655234621CC00D86BE5 /* MapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5125654234621CC00D86BE5 /* MapUITests.swift */; };
 		B5534514234E36BB009AF340 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5534513234E36BB009AF340 /* AppCoordinator.swift */; };
 		B5534516234E36D4009AF340 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5534515234E36D4009AF340 /* AppViewController.swift */; };
@@ -22,6 +21,12 @@
 		B5F79711236DF3050019CF0B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F79710236DF3050019CF0B /* MapViewController.swift */; };
 		B5F79715236DF3DE0019CF0B /* MapViewController+CLLocationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F79712236DF3DE0019CF0B /* MapViewController+CLLocationManagerDelegate.swift */; };
 		B5F79716236DF3DE0019CF0B /* MapViewController+MGLMapViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F79713236DF3DE0019CF0B /* MapViewController+MGLMapViewDelegate.swift */; };
+		B5F7971F236DF5BE0019CF0B /* OSMWay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F79719236DF5BE0019CF0B /* OSMWay.swift */; };
+		B5F79720236DF5BE0019CF0B /* HighwayType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F7971B236DF5BE0019CF0B /* HighwayType.swift */; };
+		B5F79721236DF5BE0019CF0B /* CyclewayType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F7971C236DF5BE0019CF0B /* CyclewayType.swift */; };
+		B5F79722236DF5BE0019CF0B /* SurfaceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F7971D236DF5BE0019CF0B /* SurfaceType.swift */; };
+		B5F79723236DF5BE0019CF0B /* SmoothnessType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F7971E236DF5BE0019CF0B /* SmoothnessType.swift */; };
+		B5F79727236DF5DD0019CF0B /* OSMWayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F79726236DF5DD0019CF0B /* OSMWayTests.swift */; };
 		FD417FB4210236F9BC6D5C85 /* Pods_Map.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D78741C402D91D767DB520 /* Pods_Map.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,7 +58,6 @@
 		B512563E234621CC00D86BE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5125640234621CC00D86BE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5125645234621CC00D86BE5 /* MapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5125649234621CC00D86BE5 /* MapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTests.swift; sourceTree = "<group>"; };
 		B512564B234621CC00D86BE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5125650234621CC00D86BE5 /* MapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5125654234621CC00D86BE5 /* MapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapUITests.swift; sourceTree = "<group>"; };
@@ -66,6 +70,12 @@
 		B5F79710236DF3050019CF0B /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		B5F79712236DF3DE0019CF0B /* MapViewController+CLLocationManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MapViewController+CLLocationManagerDelegate.swift"; sourceTree = "<group>"; };
 		B5F79713236DF3DE0019CF0B /* MapViewController+MGLMapViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MapViewController+MGLMapViewDelegate.swift"; sourceTree = "<group>"; };
+		B5F79719236DF5BE0019CF0B /* OSMWay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSMWay.swift; sourceTree = "<group>"; };
+		B5F7971B236DF5BE0019CF0B /* HighwayType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighwayType.swift; sourceTree = "<group>"; };
+		B5F7971C236DF5BE0019CF0B /* CyclewayType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CyclewayType.swift; sourceTree = "<group>"; };
+		B5F7971D236DF5BE0019CF0B /* SurfaceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurfaceType.swift; sourceTree = "<group>"; };
+		B5F7971E236DF5BE0019CF0B /* SmoothnessType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmoothnessType.swift; sourceTree = "<group>"; };
+		B5F79726236DF5DD0019CF0B /* OSMWayTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSMWayTests.swift; sourceTree = "<group>"; };
 		C24314C5683297D757D9C772 /* Pods-MapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapTests.debug.xcconfig"; path = "Target Support Files/Pods-MapTests/Pods-MapTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E38FFDC982C138F072054E56 /* Pods-Map.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Map.debug.xcconfig"; path = "Target Support Files/Pods-Map/Pods-Map.debug.xcconfig"; sourceTree = "<group>"; };
 		EB1B1B0F1BBEBB07DD1BCC75 /* Pods-MapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapTests.release.xcconfig"; path = "Target Support Files/Pods-MapTests/Pods-MapTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -162,7 +172,7 @@
 		B5125648234621CC00D86BE5 /* MapTests */ = {
 			isa = PBXGroup;
 			children = (
-				B5125649234621CC00D86BE5 /* MapTests.swift */,
+				B5F79724236DF5DD0019CF0B /* App */,
 				B512564B234621CC00D86BE5 /* Info.plist */,
 			);
 			path = MapTests;
@@ -217,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				B5F7970F236DF3050019CF0B /* Map */,
+				B5F79718236DF5BE0019CF0B /* OSM */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -229,6 +240,42 @@
 				B5F79713236DF3DE0019CF0B /* MapViewController+MGLMapViewDelegate.swift */,
 			);
 			path = Map;
+			sourceTree = "<group>";
+		};
+		B5F79718236DF5BE0019CF0B /* OSM */ = {
+			isa = PBXGroup;
+			children = (
+				B5F7971A236DF5BE0019CF0B /* WayTypes */,
+				B5F79719236DF5BE0019CF0B /* OSMWay.swift */,
+			);
+			path = OSM;
+			sourceTree = "<group>";
+		};
+		B5F7971A236DF5BE0019CF0B /* WayTypes */ = {
+			isa = PBXGroup;
+			children = (
+				B5F7971C236DF5BE0019CF0B /* CyclewayType.swift */,
+				B5F7971B236DF5BE0019CF0B /* HighwayType.swift */,
+				B5F7971E236DF5BE0019CF0B /* SmoothnessType.swift */,
+				B5F7971D236DF5BE0019CF0B /* SurfaceType.swift */,
+			);
+			path = WayTypes;
+			sourceTree = "<group>";
+		};
+		B5F79724236DF5DD0019CF0B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B5F79725236DF5DD0019CF0B /* OSM */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B5F79725236DF5DD0019CF0B /* OSM */ = {
+			isa = PBXGroup;
+			children = (
+				B5F79726236DF5DD0019CF0B /* OSMWayTests.swift */,
+			);
+			path = OSM;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -491,10 +538,15 @@
 				B5534514234E36BB009AF340 /* AppCoordinator.swift in Sources */,
 				B553451E234E37C6009AF340 /* UIView+Constraints.swift in Sources */,
 				B5F79715236DF3DE0019CF0B /* MapViewController+CLLocationManagerDelegate.swift in Sources */,
+				B5F79722236DF5BE0019CF0B /* SurfaceType.swift in Sources */,
+				B5F79721236DF5BE0019CF0B /* CyclewayType.swift in Sources */,
 				B5534518234E36E5009AF340 /* Coordinator.swift in Sources */,
 				B5534516234E36D4009AF340 /* AppViewController.swift in Sources */,
 				B5534520234E3859009AF340 /* UIViewController+Subcontroller.swift in Sources */,
+				B5F7971F236DF5BE0019CF0B /* OSMWay.swift in Sources */,
 				B5125635234621CB00D86BE5 /* AppDelegate.swift in Sources */,
+				B5F79720236DF5BE0019CF0B /* HighwayType.swift in Sources */,
+				B5F79723236DF5BE0019CF0B /* SmoothnessType.swift in Sources */,
 				B5F79711236DF3050019CF0B /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -503,7 +555,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B512564A234621CC00D86BE5 /* MapTests.swift in Sources */,
+				B5F79727236DF5DD0019CF0B /* OSMWayTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
