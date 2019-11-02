@@ -29,6 +29,9 @@
 		B5F79727236DF5DD0019CF0B /* OSMWayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F79726236DF5DD0019CF0B /* OSMWayTests.swift */; };
 		B5F79729236DF6410019CF0B /* OSMRawData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F79728236DF6410019CF0B /* OSMRawData.swift */; };
 		B5F7972B236DF6540019CF0B /* OSMRawDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F7972A236DF6540019CF0B /* OSMRawDataTests.swift */; };
+		B5F7972F236DF6960019CF0B /* OSMDataBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F7972D236DF6960019CF0B /* OSMDataBridge.swift */; };
+		B5F79730236DF6960019CF0B /* OSMElementToWayBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F7972E236DF6960019CF0B /* OSMElementToWayBridge.swift */; };
+		B5F79733236DF6AD0019CF0B /* OSMElementToWayBridgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F79732236DF6AD0019CF0B /* OSMElementToWayBridgeTests.swift */; };
 		FD417FB4210236F9BC6D5C85 /* Pods_Map.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D78741C402D91D767DB520 /* Pods_Map.framework */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +83,9 @@
 		B5F79726236DF5DD0019CF0B /* OSMWayTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSMWayTests.swift; sourceTree = "<group>"; };
 		B5F79728236DF6410019CF0B /* OSMRawData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSMRawData.swift; sourceTree = "<group>"; };
 		B5F7972A236DF6540019CF0B /* OSMRawDataTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSMRawDataTests.swift; sourceTree = "<group>"; };
+		B5F7972D236DF6960019CF0B /* OSMDataBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSMDataBridge.swift; sourceTree = "<group>"; };
+		B5F7972E236DF6960019CF0B /* OSMElementToWayBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSMElementToWayBridge.swift; sourceTree = "<group>"; };
+		B5F79732236DF6AD0019CF0B /* OSMElementToWayBridgeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSMElementToWayBridgeTests.swift; sourceTree = "<group>"; };
 		C24314C5683297D757D9C772 /* Pods-MapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapTests.debug.xcconfig"; path = "Target Support Files/Pods-MapTests/Pods-MapTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E38FFDC982C138F072054E56 /* Pods-Map.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Map.debug.xcconfig"; path = "Target Support Files/Pods-Map/Pods-Map.debug.xcconfig"; sourceTree = "<group>"; };
 		EB1B1B0F1BBEBB07DD1BCC75 /* Pods-MapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapTests.release.xcconfig"; path = "Target Support Files/Pods-MapTests/Pods-MapTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -249,6 +255,7 @@
 		B5F79718236DF5BE0019CF0B /* OSM */ = {
 			isa = PBXGroup;
 			children = (
+				B5F7972C236DF6960019CF0B /* Bridge */,
 				B5F7971A236DF5BE0019CF0B /* WayTypes */,
 				B5F79728236DF6410019CF0B /* OSMRawData.swift */,
 				B5F79719236DF5BE0019CF0B /* OSMWay.swift */,
@@ -278,10 +285,28 @@
 		B5F79725236DF5DD0019CF0B /* OSM */ = {
 			isa = PBXGroup;
 			children = (
+				B5F79731236DF6AD0019CF0B /* Bridge */,
 				B5F7972A236DF6540019CF0B /* OSMRawDataTests.swift */,
 				B5F79726236DF5DD0019CF0B /* OSMWayTests.swift */,
 			);
 			path = OSM;
+			sourceTree = "<group>";
+		};
+		B5F7972C236DF6960019CF0B /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				B5F7972D236DF6960019CF0B /* OSMDataBridge.swift */,
+				B5F7972E236DF6960019CF0B /* OSMElementToWayBridge.swift */,
+			);
+			path = Bridge;
+			sourceTree = "<group>";
+		};
+		B5F79731236DF6AD0019CF0B /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				B5F79732236DF6AD0019CF0B /* OSMElementToWayBridgeTests.swift */,
+			);
+			path = Bridge;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -543,7 +568,9 @@
 				B5F79716236DF3DE0019CF0B /* MapViewController+MGLMapViewDelegate.swift in Sources */,
 				B5534514234E36BB009AF340 /* AppCoordinator.swift in Sources */,
 				B553451E234E37C6009AF340 /* UIView+Constraints.swift in Sources */,
+				B5F79730236DF6960019CF0B /* OSMElementToWayBridge.swift in Sources */,
 				B5F79715236DF3DE0019CF0B /* MapViewController+CLLocationManagerDelegate.swift in Sources */,
+				B5F7972F236DF6960019CF0B /* OSMDataBridge.swift in Sources */,
 				B5F79722236DF5BE0019CF0B /* SurfaceType.swift in Sources */,
 				B5F79721236DF5BE0019CF0B /* CyclewayType.swift in Sources */,
 				B5534518234E36E5009AF340 /* Coordinator.swift in Sources */,
@@ -564,6 +591,7 @@
 			files = (
 				B5F7972B236DF6540019CF0B /* OSMRawDataTests.swift in Sources */,
 				B5F79727236DF5DD0019CF0B /* OSMWayTests.swift in Sources */,
+				B5F79733236DF6AD0019CF0B /* OSMElementToWayBridgeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
