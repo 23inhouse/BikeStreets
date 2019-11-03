@@ -20,6 +20,12 @@ class MapViewController: UIViewController {
     }
   }
 
+  private lazy var controlsViewController: ControlsViewController = {
+    let controlsViewController = ControlsViewController()
+    controlsViewController.mapDelegate = self
+    return controlsViewController
+  }()
+
   private(set) lazy var mapView: MGLMapView = {
     let mapView = MGLMapView(frame: view.bounds)
     mapView.delegate = self
@@ -27,6 +33,7 @@ class MapViewController: UIViewController {
     mapView.styleURL = URL(string: "mapbox://styles/23inhouse/ck2a8ez6l03801crrht1wx7cz")
     mapView.zoomLevel = 12
     mapView.allowsRotating = false
+    mapView.centerCoordinate = CLLocationCoordinate2D(latitude: 52.54, longitude: 13.42)
 
     return mapView
   }()
@@ -41,13 +48,15 @@ class MapViewController: UIViewController {
     return locationManager
   }()
 
-  override func viewDidLoad() {
-    super.viewDidLoad()
-
-    setupView()
-
+  func setCenterToCurrent() {
     requestLocationPermission()
     requestCurrentLocation()
+    currentLocation = locationManager.location?.coordinate
+  }
+
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    setupView()
   }
 }
 
@@ -61,12 +70,18 @@ private extension MapViewController {
     guard CLLocationManager.locationServicesEnabled() else { return }
     let authorizationStatus = CLLocationManager.authorizationStatus()
     guard [.authorizedWhenInUse, .authorizedAlways].contains(authorizationStatus) else { return }
-
     locationManager.startUpdatingLocation()
     locationManager.stopUpdatingLocation()
   }
 
   func setupView() {
     view.addSubview(mapView)
+    add(controlsViewController)
+    view.addSubview(controlsViewController.view)
+    controlsViewController.view.constrain(to: view)
+
+    let statWindow = UIApplication.shared.value(forKey: "statusBarWindow") as! UIView
+    let statusBar = statWindow.subviews[0] as UIView
+    statusBar.backgroundColor = UIColor(red: 213 / 255.0, green: 213 / 255.0, blue: 213 / 255.0, alpha: 0.7)
   }
 }

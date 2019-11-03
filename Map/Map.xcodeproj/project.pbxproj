@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0E29BA3C06A82E6C994210FE /* Pods_MapUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F73E51737274E63083968B24 /* Pods_MapUITests.framework */; };
 		272C3B84B8800755F48536DE /* Pods_MapTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 383E20D8C16C2F1A79DA4E3C /* Pods_MapTests.framework */; };
+		B511C1D3236E572F00827173 /* ControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B511C1D1236E572F00827173 /* ControlsView.swift */; };
+		B511C1D4236E572F00827173 /* ControlsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B511C1D2236E572F00827173 /* ControlsViewController.swift */; };
 		B5125635234621CB00D86BE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5125634234621CB00D86BE5 /* AppDelegate.swift */; };
 		B512563C234621CC00D86BE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B512563B234621CC00D86BE5 /* Assets.xcassets */; };
 		B512563F234621CC00D86BE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B512563D234621CC00D86BE5 /* LaunchScreen.storyboard */; };
@@ -76,6 +78,8 @@
 		383E20D8C16C2F1A79DA4E3C /* Pods_MapTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MapTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AD619C3BD03CEE49625CC4E /* Pods-Map.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Map.release.xcconfig"; path = "Target Support Files/Pods-Map/Pods-Map.release.xcconfig"; sourceTree = "<group>"; };
 		5223433DABC6A58EE082550B /* Pods-MapUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapUITests.debug.xcconfig"; path = "Target Support Files/Pods-MapUITests/Pods-MapUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B511C1D1236E572F00827173 /* ControlsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlsView.swift; sourceTree = "<group>"; };
+		B511C1D2236E572F00827173 /* ControlsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlsViewController.swift; sourceTree = "<group>"; };
 		B5125631234621CB00D86BE5 /* Map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Map.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5125634234621CB00D86BE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B512563B234621CC00D86BE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -295,6 +299,8 @@
 		B5F7970F236DF3050019CF0B /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				B511C1D1236E572F00827173 /* ControlsView.swift */,
+				B511C1D2236E572F00827173 /* ControlsViewController.swift */,
 				B5F79710236DF3050019CF0B /* MapViewController.swift */,
 				B5F79712236DF3DE0019CF0B /* MapViewController+CLLocationManagerDelegate.swift */,
 				B5F79713236DF3DE0019CF0B /* MapViewController+MGLMapViewDelegate.swift */,
@@ -652,6 +658,7 @@
 				B5F79730236DF6960019CF0B /* OSMElementToWayBridge.swift in Sources */,
 				B5F7976C236DF7F80019CF0B /* CycleWaySmallQuality.swift in Sources */,
 				B5F7976D236DF7F80019CF0B /* CycleLaneQuality.swift in Sources */,
+				B511C1D4236E572F00827173 /* ControlsViewController.swift in Sources */,
 				B5F7976A236DF7F80019CF0B /* CobblestoneQuality.swift in Sources */,
 				B5F79774236DF7F80019CF0B /* CyclePathQuality.swift in Sources */,
 				B5F79776236DF7F80019CF0B /* CycleWayUnknownQuality.swift in Sources */,
@@ -670,6 +677,7 @@
 				B5F7971F236DF5BE0019CF0B /* OSMWay.swift in Sources */,
 				B5125635234621CB00D86BE5 /* AppDelegate.swift in Sources */,
 				B5F79720236DF5BE0019CF0B /* HighwayType.swift in Sources */,
+				B511C1D3236E572F00827173 /* ControlsView.swift in Sources */,
 				B5F79770236DF7F80019CF0B /* CycleUnknownQuality.swift in Sources */,
 				B5F79723236DF5BE0019CF0B /* SmoothnessType.swift in Sources */,
 				B57D8EEA236E4768005D7CE1 /* API.swift in Sources */,
