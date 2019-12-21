@@ -9,15 +9,16 @@
 import UIKit
 
 class CyclePathQuality: StreetQualitatable {
-  var casingColor: UIColor? = #colorLiteral(red: 0.5925186276, green: 0.5184105039, blue: 0.4822110534, alpha: 1)
-  var color: UIColor = #colorLiteral(red: 0.9104626179, green: 0.8289259076, blue: 0.709180057, alpha: 1)
+//  var casingColor: UIColor? = #colorLiteral(red: 0.5925186276, green: 0.5184105039, blue: 0.4822110534, alpha: 1)
+//  var color: UIColor = #colorLiteral(red: 0.9104626179, green: 0.8289259076, blue: 0.709180057, alpha: 1)
+  var casingColor: UIColor? = #colorLiteral(red: 0.8000243902, green: 0.8001326919, blue: 0.7913011312, alpha: 1)
+  var color: UIColor = #colorLiteral(red: 0.9459878802, green: 0.9533813596, blue: 0.9054790139, alpha: 1)
   var dashPattern: [Double]?
   var highwayType: HighwayType = .street
 
   func filter(_ streets: [StreetFilterable]) -> [StreetFilterable] {
     return streets.filter { street in
-      return street.bicycle &&
-        [.footway, .path, .pedestrian].contains(street.highway) &&
+      return [.footway, .path, .pedestrian].contains(street.highway) &&
         ![.asphalt, .concrete, .paved].contains(street.surface) &&
         ![.excellent, .good].contains(street.smoothness)
     }

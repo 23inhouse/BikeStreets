@@ -9,8 +9,8 @@
 import UIKit
 
 class CobblestoneQuality: StreetQualitatable {
-  var casingColor: UIColor? = #colorLiteral(red: 0.8626597524, green: 0.8628049493, blue: 0.8626406193, alpha: 1)
-  var color: UIColor = #colorLiteral(red: 0.9999018312, green: 1, blue: 0.9998798966, alpha: 1)
+  var casingColor: UIColor? = #colorLiteral(red: 0.8000243902, green: 0.8001326919, blue: 0.7913011312, alpha: 1)
+  var color: UIColor = #colorLiteral(red: 0.9459878802, green: 0.9533813596, blue: 0.9054790139, alpha: 1)
   var dashPattern: [Double]? = [0.3, 0.3]
   var highwayType: HighwayType = .residential
 

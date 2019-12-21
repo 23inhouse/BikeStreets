@@ -43,7 +43,7 @@ private extension MapViewController {
     }
 
     DispatchQueue.global(qos: .background).async {
-      let resources = ["berlin", "amsterdam", "copenhagen", "newyork", "portland", "montreal"]
+      let resources = ["stralsund", "budapest", "berlin", "amsterdam", "copenhagen", "newyork", "portland", "montreal"]
       API.fetchWays(for: resources, style: style, completion: handleWay)
     }
   }
