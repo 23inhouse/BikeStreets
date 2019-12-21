@@ -5,6 +5,7 @@ target 'Map' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
+  pod 'FloatingPanel'
   pod 'SwiftLint'
   pod 'Mapbox-iOS-SDK', '~> 5.4'
 

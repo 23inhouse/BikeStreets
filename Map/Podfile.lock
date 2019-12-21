@@ -1,10 +1,12 @@
 PODS:
+  - FloatingPanel (1.7.1)
   - Mapbox-iOS-SDK (5.4.0)
   - Nimble (8.0.4)
   - Quick (2.2.0)
   - SwiftLint (0.35.0)
 
 DEPENDENCIES:
+  - FloatingPanel
   - Mapbox-iOS-SDK (~> 5.4)
   - Nimble
   - Quick
@@ -12,17 +14,19 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - FloatingPanel
     - Mapbox-iOS-SDK
     - Nimble
     - Quick
     - SwiftLint
 
 SPEC CHECKSUMS:
+  FloatingPanel: 2f87246071476cf05d77ba3f50a373ca4b04549e
   Mapbox-iOS-SDK: 2b58f752d94e57e95b8e54f3b52569199f6efdba
   Nimble: 18d5360282923225d62b09d781f63abc1a0111fc
   Quick: 7fb19e13be07b5dfb3b90d4f9824c855a11af40e
   SwiftLint: 5553187048b900c91aa03552807681bb6b027846
 
-PODFILE CHECKSUM: a7a8f3013a609b9f009691b885d61e74ea76dffc
+PODFILE CHECKSUM: 64e98494df03e880732806cfab7f2979c86baf39
 
 COCOAPODS: 1.8.3
