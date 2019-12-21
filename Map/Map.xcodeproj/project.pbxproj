@@ -34,7 +34,6 @@
 		B53E6DCE23AE717D00F70F7A /* RecentResultsViewController+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E6DCD23AE717D00F70F7A /* RecentResultsViewController+UITableViewDataSource.swift */; };
 		B53E6DD023AE718900F70F7A /* RecentResultsViewController+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E6DCF23AE718900F70F7A /* RecentResultsViewController+UITableViewDelegate.swift */; };
 		B53E6DD223AE719B00F70F7A /* RecentResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E6DD123AE719B00F70F7A /* RecentResultsViewController.swift */; };
-		B53E6DD523AE720500F70F7A /* SearchBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E6DD423AE720500F70F7A /* SearchBarViewController.swift */; };
 		B53E6DD723AE722E00F70F7A /* SearchDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E6DD623AE722E00F70F7A /* SearchDetailView.swift */; };
 		B53E6DD923AE726F00F70F7A /* SearchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E6DD823AE726F00F70F7A /* SearchDetailViewController.swift */; };
 		B53E6DDB23AE727D00F70F7A /* SearchDetailViewController+Annotatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E6DDA23AE727D00F70F7A /* SearchDetailViewController+Annotatable.swift */; };
@@ -42,6 +41,11 @@
 		B53E6DDF23AE73BA00F70F7A /* SearchNearbyViewController+Annotatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E6DDE23AE73BA00F70F7A /* SearchNearbyViewController+Annotatable.swift */; };
 		B53E6DE123AE73C700F70F7A /* SearchNearbyViewController+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E6DE023AE73C700F70F7A /* SearchNearbyViewController+UITableViewDataSource.swift */; };
 		B53E6DE323AE73D500F70F7A /* SearchNearbyViewController+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E6DE223AE73D500F70F7A /* SearchNearbyViewController+UITableViewDelegate.swift */; };
+		B53E6DE723AE7F2100F70F7A /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E6DE623AE7F2100F70F7A /* SearchResultsViewController.swift */; };
+		B53E6DE923AE7F3200F70F7A /* SearchResultsViewController+Annotatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E6DE823AE7F3200F70F7A /* SearchResultsViewController+Annotatable.swift */; };
+		B53E6DEB23AE7F4000F70F7A /* SearchResultsViewController+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E6DEA23AE7F4000F70F7A /* SearchResultsViewController+UITableViewDataSource.swift */; };
+		B53E6DED23AE7F4C00F70F7A /* SearchResultsViewController+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E6DEC23AE7F4C00F70F7A /* SearchResultsViewController+UITableViewDelegate.swift */; };
+		B53E6DEF23AE851800F70F7A /* InfoPanelLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E6DEE23AE851800F70F7A /* InfoPanelLayout.swift */; };
 		B5534514234E36BB009AF340 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5534513234E36BB009AF340 /* AppCoordinator.swift */; };
 		B5534516234E36D4009AF340 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5534515234E36D4009AF340 /* AppViewController.swift */; };
 		B5534518234E36E5009AF340 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5534517234E36E5009AF340 /* Coordinator.swift */; };
@@ -136,7 +140,6 @@
 		B53E6DCD23AE717D00F70F7A /* RecentResultsViewController+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecentResultsViewController+UITableViewDataSource.swift"; sourceTree = "<group>"; };
 		B53E6DCF23AE718900F70F7A /* RecentResultsViewController+UITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecentResultsViewController+UITableViewDelegate.swift"; sourceTree = "<group>"; };
 		B53E6DD123AE719B00F70F7A /* RecentResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentResultsViewController.swift; sourceTree = "<group>"; };
-		B53E6DD423AE720500F70F7A /* SearchBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarViewController.swift; sourceTree = "<group>"; };
 		B53E6DD623AE722E00F70F7A /* SearchDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDetailView.swift; sourceTree = "<group>"; };
 		B53E6DD823AE726F00F70F7A /* SearchDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDetailViewController.swift; sourceTree = "<group>"; };
 		B53E6DDA23AE727D00F70F7A /* SearchDetailViewController+Annotatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchDetailViewController+Annotatable.swift"; sourceTree = "<group>"; };
@@ -144,6 +147,11 @@
 		B53E6DDE23AE73BA00F70F7A /* SearchNearbyViewController+Annotatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchNearbyViewController+Annotatable.swift"; sourceTree = "<group>"; };
 		B53E6DE023AE73C700F70F7A /* SearchNearbyViewController+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchNearbyViewController+UITableViewDataSource.swift"; sourceTree = "<group>"; };
 		B53E6DE223AE73D500F70F7A /* SearchNearbyViewController+UITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchNearbyViewController+UITableViewDelegate.swift"; sourceTree = "<group>"; };
+		B53E6DE623AE7F2100F70F7A /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
+		B53E6DE823AE7F3200F70F7A /* SearchResultsViewController+Annotatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchResultsViewController+Annotatable.swift"; sourceTree = "<group>"; };
+		B53E6DEA23AE7F4000F70F7A /* SearchResultsViewController+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchResultsViewController+UITableViewDataSource.swift"; sourceTree = "<group>"; };
+		B53E6DEC23AE7F4C00F70F7A /* SearchResultsViewController+UITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchResultsViewController+UITableViewDelegate.swift"; sourceTree = "<group>"; };
+		B53E6DEE23AE851800F70F7A /* InfoPanelLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPanelLayout.swift; sourceTree = "<group>"; };
 		B5534513234E36BB009AF340 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		B5534515234E36D4009AF340 /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
 		B5534517234E36E5009AF340 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
@@ -307,6 +315,7 @@
 		B53E6DA623AE6F0B00F70F7A /* Info */ = {
 			isa = PBXGroup;
 			children = (
+				B53E6DEE23AE851800F70F7A /* InfoPanelLayout.swift */,
 				B53E6DAE23AE6FA700F70F7A /* InfoPanelView.swift */,
 				B53E6DAA23AE6F5600F70F7A /* InfoPanelViewController.swift */,
 				B53E6DAC23AE6F8C00F70F7A /* InfoPanelViewController+FloatingPanelControllerDelegate.swift */,
@@ -321,7 +330,6 @@
 				B53E6DB123AE6FD400F70F7A /* SearchDetail */,
 				B53E6DB223AE6FDC00F70F7A /* SearchNearby */,
 				B53E6DD323AE71DA00F70F7A /* SearchResults */,
-				B53E6DD423AE720500F70F7A /* SearchBarViewController.swift */,
 				B53E6DB423AE701F00F70F7A /* SearchPanelView.swift */,
 				B53E6DB623AE703100F70F7A /* SearchPanelViewController.swift */,
 				B53E6DBC23AE705B00F70F7A /* SearchPanelViewController+FloatingPanelControllerDelegate.swift */,
@@ -376,6 +384,10 @@
 		B53E6DD323AE71DA00F70F7A /* SearchResults */ = {
 			isa = PBXGroup;
 			children = (
+				B53E6DE623AE7F2100F70F7A /* SearchResultsViewController.swift */,
+				B53E6DE823AE7F3200F70F7A /* SearchResultsViewController+Annotatable.swift */,
+				B53E6DEA23AE7F4000F70F7A /* SearchResultsViewController+UITableViewDataSource.swift */,
+				B53E6DEC23AE7F4C00F70F7A /* SearchResultsViewController+UITableViewDelegate.swift */,
 			);
 			path = SearchResults;
 			sourceTree = "<group>";
@@ -795,7 +807,6 @@
 				B53E6DC723AE70FC00F70F7A /* Annotatable.swift in Sources */,
 				B5F79736236DF7240019CF0B /* OSMWay+StreetFilterable.swift in Sources */,
 				B53E6DBF23AE708000F70F7A /* SearchResultNavigationController.swift in Sources */,
-				B53E6DD523AE720500F70F7A /* SearchBarViewController.swift in Sources */,
 				B5F7973B236DF7410019CF0B /* StreetFilterable.swift in Sources */,
 				B53E6DAB23AE6F5600F70F7A /* InfoPanelViewController.swift in Sources */,
 				B5F79730236DF6960019CF0B /* OSMElementToWayBridge.swift in Sources */,
@@ -806,15 +817,18 @@
 				B53E6DB923AE704000F70F7A /* SearchPanelViewController+UISearchBarDelegate.swift in Sources */,
 				B5F7976A236DF7F80019CF0B /* CobblestoneQuality.swift in Sources */,
 				B53E6DAF23AE6FA700F70F7A /* InfoPanelView.swift in Sources */,
+				B53E6DE723AE7F2100F70F7A /* SearchResultsViewController.swift in Sources */,
 				B5F79774236DF7F80019CF0B /* CyclePathQuality.swift in Sources */,
 				B53E6DD723AE722E00F70F7A /* SearchDetailView.swift in Sources */,
 				B5F79776236DF7F80019CF0B /* CycleWayUnknownQuality.swift in Sources */,
 				B5F7973C236DF7410019CF0B /* StreetQualitatable.swift in Sources */,
 				B53E6DC123AE70A800F70F7A /* SearchResultViewCell.swift in Sources */,
 				B5F79715236DF3DE0019CF0B /* MapViewController+CLLocationManagerDelegate.swift in Sources */,
+				B53E6DEF23AE851800F70F7A /* InfoPanelLayout.swift in Sources */,
 				B5F7972F236DF6960019CF0B /* OSMDataBridge.swift in Sources */,
 				B53E6DDB23AE727D00F70F7A /* SearchDetailViewController+Annotatable.swift in Sources */,
 				B5F79722236DF5BE0019CF0B /* SurfaceType.swift in Sources */,
+				B53E6DED23AE7F4C00F70F7A /* SearchResultsViewController+UITableViewDelegate.swift in Sources */,
 				B5F79721236DF5BE0019CF0B /* CyclewayType.swift in Sources */,
 				B5F79759236DF7EC0019CF0B /* HighwayTypeProperty.swift in Sources */,
 				B53E6DB523AE701F00F70F7A /* SearchPanelView.swift in Sources */,
@@ -839,6 +853,8 @@
 				B511C1D3236E572F00827173 /* ControlsView.swift in Sources */,
 				B5F79770236DF7F80019CF0B /* CycleUnknownQuality.swift in Sources */,
 				B53E6DDF23AE73BA00F70F7A /* SearchNearbyViewController+Annotatable.swift in Sources */,
+				B53E6DE923AE7F3200F70F7A /* SearchResultsViewController+Annotatable.swift in Sources */,
+				B53E6DEB23AE7F4000F70F7A /* SearchResultsViewController+UITableViewDataSource.swift in Sources */,
 				B53E6DC523AE70E600F70F7A /* MKMapItem+Address.swift in Sources */,
 				B5F79723236DF5BE0019CF0B /* SmoothnessType.swift in Sources */,
 				B57D8EEA236E4768005D7CE1 /* API.swift in Sources */,

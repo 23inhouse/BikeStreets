@@ -18,4 +18,16 @@ extension UIView {
       bottomAnchor.constraint(equalTo: parentView.bottomAnchor, constant: -margin),
       ])
   }
+
+  func constrain(to parentView: UIView, margins: [CGFloat]) {
+    precondition(margins.count == 4)
+
+    translatesAutoresizingMaskIntoConstraints = false
+    NSLayoutConstraint.activate([
+      leadingAnchor.constraint(equalTo: parentView.leadingAnchor, constant: margins[3]),
+      trailingAnchor.constraint(equalTo: parentView.trailingAnchor, constant: -margins[1]),
+      topAnchor.constraint(equalTo: parentView.topAnchor, constant: margins[0]),
+      bottomAnchor.constraint(equalTo: parentView.bottomAnchor, constant: -margins[2]),
+      ])
+  }
 }

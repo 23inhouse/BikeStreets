@@ -20,6 +20,13 @@ import UIKit
     child.didMove(toParent: self)
   }
 
+  func add(_ child: UIViewController, to subview: UIView) {
+    addChild(child)
+    subview.addSubview(child.view)
+    child.didMove(toParent: self)
+    child.view.constrain(to: subview)
+  }
+
   func remove() {
     willMove(toParent: nil)
     view.removeFromSuperview()

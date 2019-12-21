@@ -7,3 +7,5 @@
 //
 
 import Foundation
+
+extension SearchNearbyViewController: Annotatable {}

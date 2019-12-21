@@ -10,13 +10,13 @@ import Foundation
 import Mapbox
 
 struct API {
-  static func fetchWays(for resources: [String], style: MGLStyle, completion: @escaping (String, MGLStyle, [OSMWay]) -> Void) {
+  static func fetchWays(for resources: [String], completion: @escaping (String, [OSMWay]) -> Void) {
     for resource in resources {
-      fetchWays(for: resource, style: style, completion: completion)
+      fetchWays(for: resource, completion: completion)
     }
   }
 
-  static func fetchWays(for resource: String, style: MGLStyle, completion: @escaping (String, MGLStyle, [OSMWay]) -> Void) {
+  static func fetchWays(for resource: String, completion: @escaping (String, [OSMWay]) -> Void) {
     guard let jsonPath = Bundle.main.path(forResource: resource, ofType: "json") else {
       print("ERROR: could find \(resource)")
       return
@@ -30,7 +30,7 @@ struct API {
 
       guard let osmWays = OSMDataBridge(osmRawData: osmRawData).make() else { return }
 
-      completion(resource, style, osmWays)
+      completion(resource, osmWays)
     } catch {
       print("Error:", error.localizedDescription)
     }

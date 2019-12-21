@@ -1,5 +1,5 @@
 //
-//  RecentResultsViewController+UITableViewDataSource.swift
+//  SearchResultsViewController+UITableViewDataSource.swift
 //  Map
 //
 //  Created by Benjamin Lewis on 21/12/19.
@@ -8,17 +8,17 @@
 
 import UIKit
 
-extension RecentResultsViewController: UITableViewDataSource {
+extension SearchResultsViewController: UITableViewDataSource {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return recentResults.count
+    return searchResults.count
   }
 
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let recentResult = recentResults[indexPath.row]
+    let searchResult = searchResults[indexPath.row]
 
     let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! SearchResultViewCell
-    cell.desc.text = recentResult.postalAddress()
-    cell.name.text = recentResult.name
+    cell.desc.text = searchResult.subtitle
+    cell.name.text = searchResult.title
     cell.picture.image = UIImage(named: "LaunchImage")
     return cell
   }

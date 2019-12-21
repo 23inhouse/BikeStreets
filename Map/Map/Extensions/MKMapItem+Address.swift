@@ -6,4 +6,12 @@
 //  Copyright © 2019 Benjamin Lewis. All rights reserved.
 //
 
-import Foundation
+import Contacts
+import MapKit
+
+extension MKMapItem {
+  func postalAddress() -> String? {
+    guard let postalAddress = placemark.postalAddress else { return nil }
+    return CNPostalAddressFormatter.string(from: postalAddress, style: .mailingAddress)
+  }
+}

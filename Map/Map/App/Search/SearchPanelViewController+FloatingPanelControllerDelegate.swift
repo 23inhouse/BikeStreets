@@ -6,4 +6,13 @@
 //  Copyright © 2019 Benjamin Lewis. All rights reserved.
 //
 
-import Foundation
+import FloatingPanel
+
+extension SearchPanelViewController: FloatingPanelControllerDelegate {
+  func floatingPanelDidChangePosition(_ vc: FloatingPanelController) {
+    if vc.position != .full {
+      searchBar.resignFirstResponder()
+      searchBar.showsCancelButton = false
+    }
+  }
+}

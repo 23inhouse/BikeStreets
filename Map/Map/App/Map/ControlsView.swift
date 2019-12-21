@@ -9,13 +9,28 @@
 import UIKit
 
 class ControlsView: UIView {
-  let centerButton: UIButton = {
-    let centerButton = UIButton()
-    centerButton.layer.cornerRadius = 9
-    centerButton.layer.masksToBounds = true
-    centerButton.setTitle("♐︎", for: .normal)
-    centerButton.backgroundColor = #colorLiteral(red: 0.5322307642, green: 0.1255653895, blue: 0.5086023617, alpha: 1)
-    return centerButton
+  let infoButton: UIButton = {
+    let infoButton = UIButton()
+    infoButton.layer.cornerRadius = 9
+    infoButton.layer.masksToBounds = true
+    infoButton.layer.borderColor = UIColor.lightGray.cgColor
+    infoButton.layer.borderWidth = 1
+    infoButton.imageEdgeInsets = UIEdgeInsets(top: 9, left: 9, bottom: 9, right: 9)
+    infoButton.setImage(UIImage(named: "info-icon"), for: .normal)
+    infoButton.backgroundColor = .white
+    return infoButton
+  }()
+
+  let locationButton: UIButton = {
+    let locationButton = UIButton()
+    locationButton.layer.cornerRadius = 9
+    locationButton.layer.masksToBounds = true
+    locationButton.layer.borderColor = UIColor.lightGray.cgColor
+    locationButton.layer.borderWidth = 1
+    locationButton.imageEdgeInsets = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+    locationButton.setImage(UIImage(named: "location-icon"), for: .normal)
+    locationButton.backgroundColor = .white
+    return locationButton
   }()
 
   override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
@@ -41,16 +56,25 @@ class ControlsView: UIView {
 
 private extension ControlsView {
   func setupConstraints() {
-    centerButton.translatesAutoresizingMaskIntoConstraints = false
+    infoButton.translatesAutoresizingMaskIntoConstraints = false
     NSLayoutConstraint.activate([
-      centerButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -9),
-      centerButton.topAnchor.constraint(equalTo: topAnchor, constant: 70),
-      centerButton.widthAnchor.constraint(equalToConstant: 38.0),
-      centerButton.heightAnchor.constraint(equalToConstant: 38.0)
+      infoButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -9),
+      infoButton.topAnchor.constraint(equalTo: topAnchor, constant: 30),
+      infoButton.widthAnchor.constraint(equalToConstant: 38.0),
+      infoButton.heightAnchor.constraint(equalToConstant: 38.0)
+      ])
+
+    locationButton.translatesAutoresizingMaskIntoConstraints = false
+    NSLayoutConstraint.activate([
+      locationButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -9),
+      locationButton.topAnchor.constraint(equalTo: topAnchor, constant: 70),
+      locationButton.widthAnchor.constraint(equalToConstant: 38.0),
+      locationButton.heightAnchor.constraint(equalToConstant: 38.0)
       ])
   }
 
   func setupView() {
-    addSubview(centerButton)
+    addSubview(infoButton)
+    addSubview(locationButton)
   }
 }

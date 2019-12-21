@@ -9,12 +9,17 @@
 import UIKit
 
 class ControlsViewController: UIViewController {
+  weak var coordinator: AppCoordinator?
   weak var mapDelegate: MapViewController?
 
   lazy private var mainView: ControlsView = { return self.view as! ControlsView }()
 
-  @objc func touchCenter(_ sender: UIButton) {
-    mapDelegate?.setCenterToCurrent()
+  @objc func touchInfo(_ sender: UIButton) {
+    coordinator?.show(panel: .info)
+  }
+
+  @objc func touchLocation(_ sender: UIButton) {
+    mapDelegate?.setLocationToCurrent()
   }
 
   override func viewDidLoad() {
@@ -28,6 +33,7 @@ private extension ControlsViewController {
   func setupView() {
     self.view = ControlsView()
 
-    mainView.centerButton.addTarget(self, action: #selector(touchCenter), for: .touchUpInside)
+    mainView.infoButton.addTarget(self, action: #selector(touchInfo), for: .touchUpInside)
+    mainView.locationButton.addTarget(self, action: #selector(touchLocation), for: .touchUpInside)
   }
 }

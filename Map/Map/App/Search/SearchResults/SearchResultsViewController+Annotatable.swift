@@ -1,5 +1,5 @@
 //
-//  SearchBarViewController.swift
+//  SearchResultsViewController+Annotatable.swift
 //  Map
 //
 //  Created by Benjamin Lewis on 21/12/19.
@@ -7,3 +7,5 @@
 //
 
 import Foundation
+
+extension SearchResultsViewController: Annotatable {}
